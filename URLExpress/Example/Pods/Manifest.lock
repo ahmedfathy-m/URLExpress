@@ -1,0 +1,16 @@
+PODS:
+  - URLExpress (0.1.0)
+
+DEPENDENCIES:
+  - URLExpress (from `../`)
+
+EXTERNAL SOURCES:
+  URLExpress:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  URLExpress: eeb7e2edd5ba7cf27fc74b1805043dfa0fc1dfe5
+
+PODFILE CHECKSUM: fd8aad8cfbdf453f45e558e20d9d12e147b71f8e
+
+COCOAPODS: 1.11.3

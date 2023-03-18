@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'URLExpress_Example' do
+  pod 'URLExpress', :path => '../'
+
+  target 'URLExpress_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
