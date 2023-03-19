@@ -1,6 +1,6 @@
 //
 //  ProcessableRequest.swift
-//  DeclarativeNetworking
+//  URLExpress
 //
 //  Created by Ahmed Fathy on 14/03/2023.
 //
@@ -11,7 +11,7 @@ public struct ProcessableRequest<T: Codable> {
     private var processingAction: (Data?, URLResponse?) throws -> T
     private var request: URLRequest
     
-    init(processingAction: @escaping (Data?, URLResponse?) throws -> T, config: ConfigurableRequest) {
+    init(processingAction: @escaping (Data?, URLResponse?) throws -> T, config: ExpressRequest) {
         self.processingAction = processingAction
         var request = config.request
         let contentType = ContentType(rawValue: config.request.value(forHTTPHeaderField: "Content-Type") ?? "")

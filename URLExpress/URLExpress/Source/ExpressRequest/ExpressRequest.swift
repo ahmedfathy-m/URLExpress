@@ -1,5 +1,5 @@
 //
-//  ConfigurableRequest.swift
+//  ExpressRequest.swift
 //  DeclarativeNetworking
 //
 //  Created by Ahmed Fathy on 14/03/2023.
@@ -7,9 +7,7 @@
 
 import Foundation
 
-
-// MARK: - ConfigurableRequest
-public struct ConfigurableRequest {
+public struct ExpressRequest {
     var request: URLRequest
     var fields: [HTTPBodyField] = []
     

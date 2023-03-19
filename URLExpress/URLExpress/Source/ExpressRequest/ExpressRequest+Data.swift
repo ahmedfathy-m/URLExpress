@@ -1,13 +1,13 @@
 //
-//  ConfigurableRequest+Data.swift
-//  DeclarativeNetworking
+//  ExpressRequest+Data.swift
+//  URLExpress
 //
 //  Created by Ahmed Fathy on 14/03/2023.
 //
 
 import Foundation
 
-extension ConfigurableRequest {
+extension ExpressRequest {
     func toJSONData() -> Data {
         var params = [String: Any]()
         self.fields.forEach { params[$0.key] = String(data: $0.value, encoding: .utf8) }
