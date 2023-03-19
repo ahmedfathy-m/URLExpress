@@ -10,12 +10,17 @@ import Foundation
 extension ExpressRequest {
     func toJSONData() -> Data {
         var params = [String: Any]()
-        self.fields.forEach { params[$0.key] = String(data: $0.value, encoding: .utf8) }
+        self.fields
+            .filter { $0.type == "" }
+            .forEach { params[$0.key] = $0.value.utf8String }
         return (try? JSONSerialization.data(withJSONObject: params)) ?? Data()
     }
     
     func toFormURLEncoded() -> Data {
-        let body = self.fields.map { "\($0.key)=\($0.value)" }.joined(separator: "&")
+        let body = self.fields
+            .filter { $0.type == "text" }
+            .map { "\($0.key)=\($0.value)" }
+            .joined(separator: "&")
         return body.data(using: .utf8) ?? Data()
     }
 }
