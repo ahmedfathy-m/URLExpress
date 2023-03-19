@@ -14,7 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		74375D5E29C63CC0007FA4E7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74375D5D29C63CC0007FA4E7 /* User.swift */; };
+		740C4A7A29C79CAF008FC703 /* UpdateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740C4A7929C79CAF008FC703 /* UpdateResponse.swift */; };
 		74375D6029C66D0F007FA4E7 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74375D5F29C66D0F007FA4E7 /* Login.swift */; };
 		9A5BB112106F9D46F37DC0C5 /* Pods_URLExpress_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D7E67CC7AA1CF809221CBD /* Pods_URLExpress_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -42,7 +42,7 @@
 		607FACE51AFB9204008FA782 /* URLExpress_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLExpress_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		74375D5D29C63CC0007FA4E7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		740C4A7929C79CAF008FC703 /* UpdateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateResponse.swift; sourceTree = "<group>"; };
 		74375D5F29C66D0F007FA4E7 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		A6AA24A928825C33D4F2976D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AE1DB397E79D1EA871BD0630 /* Pods-URLExpress_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLExpress_Example.debug.xcconfig"; path = "Target Support Files/Pods-URLExpress_Example/Pods-URLExpress_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -158,8 +158,8 @@
 		74375D5C29C63C9F007FA4E7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				74375D5D29C63CC0007FA4E7 /* User.swift */,
 				74375D5F29C66D0F007FA4E7 /* Login.swift */,
+				740C4A7929C79CAF008FC703 /* UpdateResponse.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -344,9 +344,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				740C4A7A29C79CAF008FC703 /* UpdateResponse.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				74375D5E29C63CC0007FA4E7 /* User.swift in Sources */,
 				74375D6029C66D0F007FA4E7 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

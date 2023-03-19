@@ -19,12 +19,15 @@ public struct ProcessableRequest<T: Codable> {
         case .json:
             request.httpBody = config.toJSONData()
         case .formData:
-            break
+            let boundary = UUID().uuidString
+            request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+            request.httpBody = config.generateMultiPartData(boundary: boundary)
         case .formURLEncoded:
             request.httpBody = config.toFormURLEncoded()
         case .none: break
         }
         self.request = request
+
     }
     
     public func send(failure: @escaping (Error)->Void, success: @escaping (T)->Void) {
