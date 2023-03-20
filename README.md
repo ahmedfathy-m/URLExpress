@@ -15,6 +15,7 @@
     - [Cocoapods](#cocoapods)
     - [Swift Package Manager](#swift-package-manager)
 - [Usage](#usage)
+- [Documentation](https://github.com/ahmedfathy-m/URLExpress/blob/main/Documentation.md)
 - [Developer](#developer)
 - [License](#license)
 
@@ -72,7 +73,7 @@ dependencies: [
             }
 ```
 
-For detailed instructions on how to use **URLExpress** in multiple case check the docs and examples
+For detailed instructions on how to use **URLExpress** in multiple case check the [**documentation**](https://github.com/ahmedfathy-m/URLExpress/blob/main/Documentation.md).
 
 ## Developer
 
