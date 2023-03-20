@@ -8,7 +8,7 @@
 import Foundation
 
 extension ExpressRequest {
-    /// Sets the data type you want returned from the request.
+    /// Filters the response data and only retrieves the selected format.
     ///
     /// If you set the accept type to `application/json` for example. You'll only be able to retrieve json data.
     /// If the response has xml data passed along with it, it won't be intercepted.

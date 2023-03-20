@@ -8,6 +8,11 @@
 import Foundation
 
 extension ExpressRequest {
+    /**
+     Returns a `Data` object that represents the HTTP request body as JSON data.
+
+     - Returns: A `Data` object that represents the HTTP request body as JSON data.
+     */
     func toJSONData() -> Data {
         var params = [String: Any]()
         self.fields
@@ -16,6 +21,11 @@ extension ExpressRequest {
         return (try? JSONSerialization.data(withJSONObject: params)) ?? Data()
     }
     
+    /**
+     Returns a `Data` object that represents the HTTP request body as URL-encoded form data.
+
+     - Returns: A `Data` object that represents the HTTP request body as URL-encoded form data.
+     */
     func toFormURLEncoded() -> Data {
         let body = self.fields
             .filter { $0.type == "text" }

@@ -11,7 +11,7 @@ extension ExpressRequest {
     /// Decodes the request's response on receiving it.
     /// - Parameter type: The type of the value to decode from the supplied JSON object.
     /// - Returns: A SendableRequest objects that could be fired and decoded immediately.
-    public func decodeOnReceive<T: Codable>(for type: T.Type) -> SendableRequest<T> {
+    public func decodeJSONOnReceive<T: Codable>(for type: T.Type) -> SendableRequest<T> {
         let decode: ProcessingAction<T> = { data, _ in
             return try JSONDecoder().decode(type.self, from: data ?? Data())
         }
@@ -20,7 +20,7 @@ extension ExpressRequest {
     
     /// Processes the request's response on receiving it.
     /// - Parameters:
-    ///   - type: The type of the value to decode from the supplied JSON object.
+    ///   - type: The type of the value to decode the response against.
     ///   - process: A custom processing action.
     /// - Returns: A SendableRequest objects that could be fired and processed immediately.
     public func tryHandleOnReceive<T: Codable>(for type: T.Type, _ process: @escaping (Data?, URLResponse?) throws -> T) -> SendableRequest<T> {

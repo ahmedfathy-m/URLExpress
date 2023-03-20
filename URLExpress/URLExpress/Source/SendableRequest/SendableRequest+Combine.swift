@@ -9,7 +9,9 @@ import Foundation
 import Combine
 
 extension SendableRequest {
-    public func requestPublisher() -> AnyPublisher<T, Error> {
+    /// Sends the request and retrieves a publisher of the result
+    /// - Returns: The network response as a publisher of the model type
+    public func sendAsPublisher() -> AnyPublisher<T, Error> {
         return Future { promise in
             send {
                 promise(.failure($0))

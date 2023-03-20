@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// An object that wraps the request whether it's a simple decoding action or containse additional processing.
 public struct SendableRequest<T: Codable> {
     private var processingAction: (Data?, URLResponse?) throws -> T
     private var request: URLRequest
@@ -30,6 +31,10 @@ public struct SendableRequest<T: Codable> {
 
     }
     
+    /// ٍSends the request to the network and decodes the retrieved response immediately.
+    /// - Parameters:
+    ///   - failure: The action to be executed in case of error with the error as an argument.
+    ///   - success: The action to be executed in case of success with the retrieved response as an argument.
     public func send(failure: @escaping (Error)->Void, success: @escaping (T)->Void) {
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard error == nil else {

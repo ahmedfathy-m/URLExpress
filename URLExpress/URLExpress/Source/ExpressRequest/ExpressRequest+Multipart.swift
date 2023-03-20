@@ -8,6 +8,14 @@
 import Foundation
 
 extension ExpressRequest {
+    /**
+     Returns a `Data` object that represents the HTTP request body as multipart/form-data.
+
+     - Parameters:
+        - boundary: The boundary string used to separate the parts of the multipart/form-data.
+     
+     - Returns: A `Data` object that represents the HTTP request body as multipart/form-data.
+     */
     func generateMultiPartData(boundary: String) -> Data {
         let httpBody = NSMutableData()
         self.fields.forEach {
