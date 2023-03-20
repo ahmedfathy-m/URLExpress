@@ -14,6 +14,7 @@
 - [Installation](#installation)
     - [Cocoapods](#cocoapods)
     - [Swift Package Manager](#swift-package-manager)
+- [Usage](#usage)
 - [Developer](#developer)
 - [License](#license)
 
@@ -55,6 +56,23 @@ dependencies: [
 ```
 
 ## Usage
+**URLExpress** allows you to chain multiple commands as you would in Combine or SwiftUI to produce declarative code that reduces unwanted mutability and side effects.
+```swift
+        URL(domain: "https://dummyjson.com", path: "auth/login")!
+            .makeRequest(with: .post)
+            .appendingTextField("username", value: "kminchelle")
+            .appendingTextField("password", value: "0lelplR")
+            .withContentType(.json)
+            .withAcceptType(.json)
+            .decodeJSONOnReceive(for: Login.self)
+            .send {
+                print($0)
+            } success: {
+                print("Welcome, \($0.firstName) \($0.lastName)")
+            }
+```
+
+For detailed instructions on how to use **URLExpress** in multiple case check the docs and examples
 
 ## Developer
 
@@ -63,4 +81,4 @@ dependencies: [
 
 ## License
 
-URLExpress is available under the MIT license. See the LICENSE file for more info.
+URLExpress is available under the MIT license. See the [LICENSE file](https://github.com/ahmedfathy-m/URLExpress/blob/main/LICENSE) for more info.
