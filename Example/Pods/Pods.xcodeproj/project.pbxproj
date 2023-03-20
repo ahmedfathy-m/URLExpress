@@ -27,7 +27,7 @@
 		74375D5729C63BA8007FA4E7 /* HTTPBodyFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74375D4629C63BA8007FA4E7 /* HTTPBodyFields.swift */; };
 		74375D5829C63BA8007FA4E7 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74375D4829C63BA8007FA4E7 /* HTTPMethod.swift */; };
 		74375D5929C63BA8007FA4E7 /* URL+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74375D4A29C63BA8007FA4E7 /* URL+Init.swift */; };
-		74375D5A29C63BA8007FA4E7 /* URL+ConfigurableRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74375D4B29C63BA8007FA4E7 /* URL+ConfigurableRequest.swift */; };
+		74375D5A29C63BA8007FA4E7 /* URL+ExpressRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74375D4B29C63BA8007FA4E7 /* URL+ExpressRequest.swift */; };
 		74375D5B29C63BA8007FA4E7 /* URL+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74375D4C29C63BA8007FA4E7 /* URL+Query.swift */; };
 		74EA832229C792130080710E /* AcceptType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA832129C792130080710E /* AcceptType.swift */; };
 		74EA832429C794050080710E /* ProcessingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA832329C794050080710E /* ProcessingAction.swift */; };
@@ -85,7 +85,7 @@
 		74375D4629C63BA8007FA4E7 /* HTTPBodyFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPBodyFields.swift; sourceTree = "<group>"; };
 		74375D4829C63BA8007FA4E7 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		74375D4A29C63BA8007FA4E7 /* URL+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Init.swift"; sourceTree = "<group>"; };
-		74375D4B29C63BA8007FA4E7 /* URL+ConfigurableRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+ConfigurableRequest.swift"; sourceTree = "<group>"; };
+		74375D4B29C63BA8007FA4E7 /* URL+ExpressRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+ExpressRequest.swift"; sourceTree = "<group>"; };
 		74375D4C29C63BA8007FA4E7 /* URL+Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Query.swift"; sourceTree = "<group>"; };
 		74EA832129C792130080710E /* AcceptType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptType.swift; sourceTree = "<group>"; };
 		74EA832329C794050080710E /* ProcessingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingAction.swift; sourceTree = "<group>"; };
@@ -241,7 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				74375D4A29C63BA8007FA4E7 /* URL+Init.swift */,
-				74375D4B29C63BA8007FA4E7 /* URL+ConfigurableRequest.swift */,
+				74375D4B29C63BA8007FA4E7 /* URL+ExpressRequest.swift */,
 				74375D4C29C63BA8007FA4E7 /* URL+Query.swift */,
 			);
 			path = URL;
@@ -511,7 +511,7 @@
 				74375D5229C63BA8007FA4E7 /* ExpressRequest+Headers.swift in Sources */,
 				74375D5829C63BA8007FA4E7 /* HTTPMethod.swift in Sources */,
 				74375D5629C63BA8007FA4E7 /* ExpressRequest.swift in Sources */,
-				74375D5A29C63BA8007FA4E7 /* URL+ConfigurableRequest.swift in Sources */,
+				74375D5A29C63BA8007FA4E7 /* URL+ExpressRequest.swift in Sources */,
 				74375D5029C63BA8007FA4E7 /* ExpressRequest+Combine.swift in Sources */,
 				74EA832229C792130080710E /* AcceptType.swift in Sources */,
 				74375D5B29C63BA8007FA4E7 /* URL+Query.swift in Sources */,
