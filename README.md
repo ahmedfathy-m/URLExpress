@@ -1,6 +1,6 @@
 # URLExpress
 
-[![CI Status](https://img.shields.io/travis/Ahmed Fathy/URLExpress.svg?style=flat)](https://travis-ci.org/Ahmed Fathy/URLExpress)
+[![CI Status](https://img.shields.io/travis/Ahmed%20Fathy/URLExpress.svg?style=flat)](https://travis-ci.org/Ahmed%20Fathy/URLExpress)
 [![Version](https://img.shields.io/cocoapods/v/URLExpress.svg?style=flat)](https://cocoapods.org/pods/URLExpress)
 [![License](https://img.shields.io/cocoapods/l/URLExpress.svg?style=flat)](https://cocoapods.org/pods/URLExpress)
 [![Platform](https://img.shields.io/cocoapods/p/URLExpress.svg?style=flat)](https://cocoapods.org/pods/URLExpress)
