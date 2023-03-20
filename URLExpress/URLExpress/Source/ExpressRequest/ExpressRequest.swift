@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// A wrapper for URLRequest that enables declarative syntax for networking.
 public struct ExpressRequest {
     var request: URLRequest
     var fields: [HTTPBodyField] = []

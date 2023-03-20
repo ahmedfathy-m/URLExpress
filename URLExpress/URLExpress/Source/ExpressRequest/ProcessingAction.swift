@@ -7,4 +7,5 @@
 
 import Foundation
 
+/// A processing action that returns a decoded response but you can add custom handling to it.
 typealias ProcessingAction<T: Codable> = (Data?, URLResponse?) throws -> T

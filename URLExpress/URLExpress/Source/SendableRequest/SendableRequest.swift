@@ -1,5 +1,5 @@
 //
-//  ProcessableRequest.swift
+//  SendableRequest.swift
 //  URLExpress
 //
 //  Created by Ahmed Fathy on 14/03/2023.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct ProcessableRequest<T: Codable> {
+public struct SendableRequest<T: Codable> {
     private var processingAction: (Data?, URLResponse?) throws -> T
     private var request: URLRequest
     

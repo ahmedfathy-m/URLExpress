@@ -9,7 +9,8 @@ import Foundation
 import Combine
 
 extension ExpressRequest {
-    public func dataTaskPublisher() -> URLSession.DataTaskPublisher {
+    /// Returns a publisher that wraps a URL session data task for the requst
+    public var dataTaskPublisher: URLSession.DataTaskPublisher {
         return URLSession.shared.dataTaskPublisher(for: self.request)
     }
 }
