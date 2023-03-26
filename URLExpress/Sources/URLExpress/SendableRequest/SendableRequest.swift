@@ -9,8 +9,8 @@ import Foundation
 
 /// An object that wraps the request whether it's a simple decoding action or containse additional processing.
 public struct SendableRequest<T: Codable> {
-    private var processingAction: (Data?, URLResponse?) throws -> T
-    private var request: URLRequest
+    var processingAction: (Data?, URLResponse?) throws -> T
+    var request: URLRequest
     
     init(processingAction: @escaping (Data?, URLResponse?) throws -> T, config: ExpressRequest) {
         self.processingAction = processingAction

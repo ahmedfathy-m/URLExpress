@@ -16,7 +16,7 @@ extension ExpressRequest {
     func toJSONData() -> Data {
         var params = [String: Any]()
         self.fields
-            .filter { $0.type == "" }
+            .filter { $0.type == "text" }
             .forEach { params[$0.key] = $0.value.utf8String }
         return (try? JSONSerialization.data(withJSONObject: params)) ?? Data()
     }
@@ -29,7 +29,7 @@ extension ExpressRequest {
     func toFormURLEncoded() -> Data {
         let body = self.fields
             .filter { $0.type == "text" }
-            .map { "\($0.key)=\($0.value)" }
+            .map { "\($0.key)=\($0.value.utf8String)" }
             .joined(separator: "&")
         return body.data(using: .utf8) ?? Data()
     }

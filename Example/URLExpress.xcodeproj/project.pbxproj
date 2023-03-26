@@ -48,7 +48,7 @@
 		D5E4DEFE6D3C9EE09BE48BDD /* Pods-URLExpress_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLExpress_Example.release.xcconfig"; path = "Target Support Files/Pods-URLExpress_Example/Pods-URLExpress_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F330594155037C3D06F50BD1 /* Pods_URLExpress_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLExpress_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0A4901666748A8899CEAEC /* Pods-URLExpress_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLExpress_Tests.debug.xcconfig"; path = "Target Support Files/Pods-URLExpress_Tests/Pods-URLExpress_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FDCE46F9CD54FC1F59D96072 /* URLExpress.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = URLExpress.podspec; path = ../URLExpress.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FDCE46F9CD54FC1F59D96072 /* URLExpress.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = URLExpress.podspec; path = ../URLExpress.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
