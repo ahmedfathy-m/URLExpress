@@ -2,9 +2,9 @@
 ![](https://i.imgur.com/jr0o04L.png)
 
 [![CI Status](https://img.shields.io/travis/Ahmed%20Fathy/URLExpress.svg?style=flat)](https://travis-ci.org/Ahmed%20Fathy/URLExpress)
-[![Version](https://img.shields.io/cocoapods/v/URLExpress.svg?style=flat)](https://cocoapods.org/pods/URLExpress)
-[![License](https://img.shields.io/cocoapods/l/URLExpress.svg?style=flat)](https://cocoapods.org/pods/URLExpress)
-[![Platform](https://img.shields.io/cocoapods/p/URLExpress.svg?style=flat)](https://cocoapods.org/pods/URLExpress)
+[![Version](https://img.shields.io/badge/URLExpress-0.1.0-blue)](https://cocoapods.org/pods/URLExpress)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey)](https://cocoapods.org/pods/URLExpress)
+[![Platform](https://img.shields.io/badge/cocoapods-URLExpress-blue)](https://cocoapods.org/pods/URLExpress)
 [![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange)](https://cocoapods.org/pods/URLExpress)
 [![Swift 5.7](https://img.shields.io/badge/Swift-5.7-Orange)](https://img.shields.io/badge/Swift-5.7-Orange)
 ![GitHub repo size](https://img.shields.io/github/repo-size/ahmedfathy-m/URLExpress)
