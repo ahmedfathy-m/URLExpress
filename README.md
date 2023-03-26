@@ -7,6 +7,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/URLExpress.svg?style=flat)](https://cocoapods.org/pods/URLExpress)
 [![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange)](https://cocoapods.org/pods/URLExpress)
 [![Swift 5.7](https://img.shields.io/badge/Swift-5.7-Orange)](https://img.shields.io/badge/Swift-5.7-Orange)
+![GitHub repo size](https://img.shields.io/github/repo-size/ahmedfathy-m/URLExpress)
 
 **URLExpress** is a framework built on top of [**URLSession**](https://developer.apple.com/documentation/foundation/urlsession) to enable declarative syntax for URLRequests to reduce unwanted mutability and increase readability.
 
