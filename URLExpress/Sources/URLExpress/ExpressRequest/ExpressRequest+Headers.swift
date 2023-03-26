@@ -20,7 +20,7 @@ extension ExpressRequest {
     /// Sets the value for the authorization header. Useful for non-bearer authorization like OAuth 1.0.
     /// - Parameter value: The authorization header value.
     /// - Returns: An authorized version of the same request.
-    public func withAuthorizationHeaer(_ value: String) -> ExpressRequest {
+    public func withAuthorizationHeader(_ value: String) -> ExpressRequest {
         var wrapper = self
         wrapper.request.setValue(value, forHTTPHeaderField: "Authorization")
         return wrapper
