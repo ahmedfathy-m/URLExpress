@@ -6,7 +6,7 @@
     - [URL Queries](#url-queries)
     - [Making Requests and HTTP Methods](#making-requests-with-an-http-method)
 - [HTTP Headers](#http-headers)
-    - [`Accept` and `Content-Type`](#accept-and-content-type)
+    - [`Accept` and `Content-Type`](#content-type-and-accept)
     - [Authorization](#authorization)
         - [Using Bearer Token](#bearer)
         - [Regular Authorization](#regular)
